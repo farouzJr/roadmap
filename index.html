@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farouz Ultimate Data Science Roadmap</title>
+    <meta name="description" content="The most comprehensive open-source Data Science & AI learning roadmap. From absolute zero to Mid-Level ML Engineer.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Particle Canvas -->
+<canvas id="particles"></canvas>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+    <div class="nav-brand"><i class="fas fa-brain"></i><span>Farouz Roadmap</span></div>
+    <div class="nav-links" id="navLinks">
+        <a href="#phase0" class="nav-link">Zero</a>
+        <a href="#phase1" class="nav-link">Analysis</a>
+        <a href="#phase2" class="nav-link">Math</a>
+        <a href="#phase3" class="nav-link">ML</a>
+        <a href="#phase4" class="nav-link">DL</a>
+        <a href="#phase5" class="nav-link">MLOps</a>
+        <a href="#resources" class="nav-link">Resources</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<header class="hero" id="hero">
+    <div class="hero-content">
+        <div class="hero-badge anim">FROM ABSOLUTE ZERO TO ML ENGINEER</div>
+        <h1 class="anim">Farouz Ultimate<br>Data Science Roadmap</h1>
+        <p class="hero-sub anim">The most comprehensive, open-source learning path for Data Science &amp; AI. From your first line of code to deploying production ML systems.</p>
+        <div class="hero-stats anim">
+            <div class="stat" data-count="6"><div class="stat-num counter">0</div><div class="stat-lbl">Phases</div></div>
+            <div class="stat" data-count="18"><div class="stat-num counter">0</div><div class="stat-lbl">Sections</div></div>
+            <div class="stat" data-count="150"><div class="stat-num counter">0</div><div class="stat-lbl">Topics</div></div>
+            <div class="stat" data-count="30"><div class="stat-num counter">0</div><div class="stat-lbl">Resources</div></div>
+        </div>
+        <div class="hero-cta anim">
+            <a href="#phase0" class="btn btn-pri"><i class="fas fa-rocket"></i> Start Journey</a>
+            <a href="#resources" class="btn btn-sec"><i class="fas fa-book"></i> Resources</a>
+        </div>
+    </div>
+    <div class="scroll-hint"><div class="mouse"><div class="wheel"></div></div><span>Scroll to explore</span></div>
+</header>
+
+<!-- ═══════════════ OVERVIEW ═══════════════ -->
+<section class="sec-overview" id="overview">
+    <div class="container">
+        <h2 class="sec-title anim"><i class="fas fa-map"></i> Roadmap Overview</h2>
+        <div class="ov-grid anim">
+            <div class="ov-card" data-target="phase0" style="--ac:var(--emerald)"><div class="ov-icon"><i class="fas fa-seedling"></i></div><h3>Phase 0</h3><p>Absolute Zero</p><span>Computer Basics · Python Fundamentals · Logic</span></div>
+            <div class="ov-card" data-target="phase1" style="--ac:var(--blue)"><div class="ov-icon"><i class="fas fa-chart-bar"></i></div><h3>Phase 1</h3><p>Data Analysis</p><span>Excel · SQL · Pandas · EDA · Power BI</span></div>
+            <div class="ov-card" data-target="phase2" style="--ac:var(--cyan)"><div class="ov-icon"><i class="fas fa-square-root-variable"></i></div><h3>Phase 2</h3><p>Math &amp; Engineering</p><span>Linear Algebra · Calculus · Probability · DSA</span></div>
+            <div class="ov-card" data-target="phase3" style="--ac:var(--purple)"><div class="ov-icon"><i class="fas fa-cogs"></i></div><h3>Phase 3</h3><p>Machine Learning</p><span>Regression · Trees · SVMs · Clustering · SHAP</span></div>
+            <div class="ov-card" data-target="phase4" style="--ac:var(--orange)"><div class="ov-icon"><i class="fas fa-network-wired"></i></div><h3>Phase 4</h3><p>Deep Learning</p><span>CNNs · Transformers · LLMs · GenAI</span></div>
+            <div class="ov-card" data-target="phase5" style="--ac:var(--green)"><div class="ov-icon"><i class="fas fa-cloud-arrow-up"></i></div><h3>Phase 5</h3><p>MLOps &amp; Cloud</p><span>Docker · FastAPI · AWS · MLflow · CI/CD</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════ PHASE 0 ═══════════════ -->
+<section class="phase" id="phase0">
+<div class="container">
+    <div class="ph-head anim"><div class="ph-num" style="background:var(--grad-em)">0</div><h2>Absolute Zero — The Starting Point</h2><p class="ph-sub">Never written a line of code? Perfect. This is where legends begin.</p></div>
+    <div class="cards-grid">
+
+        <div class="card anim" style="--ca:var(--emerald)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(52,211,153,.12);color:var(--emerald)"><i class="fas fa-computer"></i></span><h3>Computer &amp; Digital Literacy</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">How Computers Work</div><ul class="tl"><li>CPU, RAM, Storage — what happens when you press "Run"</li><li>Operating Systems (Windows, macOS, Linux basics)</li><li>File Systems — organizing projects professionally</li><li>The Terminal / Command Line (navigating, creating files, running scripts)</li></ul></div>
+                <div class="tg"><div class="tt">The Internet &amp; Data</div><ul class="tl"><li>Client-Server architecture</li><li>HTTP, URLs, APIs — what happens when you open a website</li><li>Data formats: CSV, JSON, XML</li></ul></div>
+                <div class="tg"><div class="tt">Essential Tools Setup</div><ul class="tl"><li>Installing Python (Anaconda distribution)</li><li>Jupyter Notebooks &amp; Google Colab</li><li>VS Code — your professional code editor</li><li>Creating a GitHub account</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--emerald)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(52,211,153,.12);color:var(--emerald)"><i class="fas fa-lightbulb"></i></span><h3>Computational Thinking &amp; Logic</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Thinking Like a Programmer</div><ul class="tl"><li>Decomposition — breaking big problems into tiny steps</li><li>Pattern Recognition — spotting repeating structures</li><li>Abstraction — ignoring irrelevant details</li><li>Algorithm Design — step-by-step solutions (flowcharts)</li></ul></div>
+                <div class="tg"><div class="tt">Pre-Math Foundations</div><ul class="tl"><li>Number systems (integers, floats, binary basics)</li><li>Order of operations, fractions, percentages</li><li>Basic algebra (variables, equations, functions)</li><li>Reading graphs and charts</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--emerald)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(52,211,153,.12);color:var(--emerald)"><i class="fas fa-code"></i></span><h3>Python — Your First Language</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Core Syntax</div><ul class="tl"><li>Variables &amp; Data Types (int, float, str, bool)</li><li>Operators (arithmetic, comparison, logical)</li><li>Strings (slicing, formatting, methods)</li><li>Input / Output — your first interactive program</li></ul></div>
+                <div class="tg"><div class="tt">Control Flow</div><ul class="tl"><li>if / elif / else — decision making</li><li>for loops, while loops — repetition</li><li>break, continue, pass</li><li>Nested loops &amp; loop patterns</li></ul></div>
+                <div class="tg"><div class="tt">Data Collections</div><ul class="tl"><li>Lists — ordered, mutable sequences</li><li>Tuples — immutable sequences</li><li>Dictionaries — key-value storage</li><li>Sets — unique elements</li><li>List Comprehensions</li></ul></div>
+                <div class="tg"><div class="tt">Functions &amp; Modules</div><ul class="tl"><li>Defining functions (parameters, return values)</li><li>*args, **kwargs</li><li>Lambda functions</li><li>Importing modules (math, random, os)</li><li>Installing packages with pip</li></ul></div>
+                <div class="tg"><div class="tt">File &amp; Error Handling</div><ul class="tl"><li>Reading / Writing text and CSV files</li><li>try / except / finally</li><li>Common Python errors and debugging</li></ul></div>
+                <div class="cap"><div class="cap-title"><i class="fas fa-star"></i> Mini-Projects</div><ul><li>Calculator app</li><li>Number guessing game</li><li>Simple CSV data reader</li></ul></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ═══════════════ PHASE 1 ═══════════════ -->
+<section class="phase" id="phase1">
+<div class="container">
+    <div class="ph-head anim"><div class="ph-num" style="background:var(--grad-1)">1</div><h2>Data Analysis Mastery</h2><p class="ph-sub">Master business logic, data wrangling, and dashboarding</p></div>
+    <div class="cards-grid">
+
+        <div class="card anim" style="--ca:var(--blue)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(59,130,246,.12);color:var(--blue)"><i class="fas fa-table"></i></span><h3>The Business Engine</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Advanced Excel</div><ul class="tl"><li>Pivot Tables &amp; Pivot Charts</li><li>XLOOKUP, INDEX/MATCH, INDIRECT</li><li>Power Query (ETL inside Excel)</li><li>Power Pivot &amp; Data Modeling</li><li>Dynamic Arrays &amp; LAMBDA Functions</li><li>Conditional Formatting &amp; Sparklines</li></ul></div>
+                <div class="tg"><div class="tt">Business Metrics</div><ul class="tl"><li>CAC (Customer Acquisition Cost)</li><li>LTV (Lifetime Value) &amp; LTV:CAC Ratio</li><li>Churn Rate, Retention Rate</li><li>Gross Margin, Net Margin, EBITDA</li><li>Unit Economics &amp; Break-even Analysis</li><li>MRR / ARR (Recurring Revenue)</li></ul></div>
+                <div class="tg"><div class="tt">SQL Mastery</div><ul class="tl"><li>SELECT, WHERE, ORDER BY, LIMIT</li><li>GROUP BY, HAVING, COUNT, SUM, AVG</li><li>Joins: INNER, LEFT, RIGHT, FULL, CROSS, SELF</li><li>Subqueries &amp; Correlated Subqueries</li><li>CTEs (Common Table Expressions)</li><li>Window Functions: ROW_NUMBER, RANK, DENSE_RANK</li><li>LEAD, LAG, Running Totals, Moving Averages</li><li>CASE WHEN, COALESCE, NULLIF</li><li>Query Optimization &amp; Indexing</li><li>Database: PostgreSQL / MySQL</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--purple)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(139,92,246,.12);color:var(--purple)"><i class="fab fa-python"></i></span><h3>Python Data Engine &amp; Statistics</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">NumPy</div><ul class="tl"><li>ndarray — creation, indexing, slicing</li><li>Broadcasting &amp; Vectorized Operations</li><li>Math functions (sum, mean, std, dot)</li><li>Random number generation</li><li>Reshaping, stacking, splitting</li></ul></div>
+                <div class="tg"><div class="tt">Pandas</div><ul class="tl"><li>Series &amp; DataFrames</li><li>Reading data (CSV, Excel, JSON, SQL)</li><li>Filtering, Sorting, Boolean Indexing</li><li>GroupBy, Aggregation, Pivot Tables</li><li>Merge, Join, Concat</li><li>Missing Data (fillna, dropna, interpolate)</li><li>apply(), map(), lambda</li><li>Time Series basics (datetime, resample)</li></ul></div>
+                <div class="tg"><div class="tt">Descriptive Statistics</div><ul class="tl"><li>Mean, Median, Mode</li><li>Variance, Standard Deviation</li><li>Skewness, Kurtosis</li><li>Percentiles, Quartiles, IQR</li><li>Correlation (Pearson, Spearman)</li></ul></div>
+                <div class="tg"><div class="tt">Probability Distributions</div><ul class="tl"><li>Normal (Gaussian) Distribution</li><li>Binomial &amp; Bernoulli</li><li>Poisson, Uniform Distribution</li><li>Central Limit Theorem</li></ul></div>
+                <div class="tg"><div class="tt">Visualization &amp; Storytelling</div><ul class="tl"><li>Matplotlib (figures, axes, subplots)</li><li>Seaborn (heatmaps, pair plots, violin plots)</li><li>Plotly (interactive charts)</li><li>Choosing the right chart for the data</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--green)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-brain"></i></span><h3>Analytics &amp; Intelligence</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Inferential Statistics</div><ul class="tl"><li>Population vs. Sample</li><li>Hypothesis Testing (Null vs. Alternative)</li><li>Z-test, T-test (one-sample, two-sample, paired)</li><li>Chi-Square test, ANOVA</li><li>P-values, Significance Level (α)</li><li>Confidence Intervals</li><li>Effect Size (Cohen's d)</li><li>Statistical Power &amp; Sample Size</li><li>A/B Testing — design, execution, interpretation</li></ul></div>
+                <div class="tg"><div class="tt">Business Intelligence — Power BI</div><ul class="tl"><li>Data Import &amp; Power Query</li><li>Data Modeling (Star Schema, Relationships)</li><li>DAX (Measures, CALCULATE, Time Intelligence)</li><li>Row-Level Security (RLS)</li><li>Interactive Report Design</li></ul></div>
+                <div class="tg"><div class="tt">Advanced Business Analytics</div><ul class="tl"><li>Funnel Analysis (Conversion Funnels)</li><li>Cohort Analysis</li><li>RFM Segmentation</li><li>Customer Segmentation</li><li>Pareto Analysis (80/20 Rule)</li></ul></div>
+                <div class="cap"><div class="cap-title"><i class="fas fa-star"></i> Capstone Projects</div><ul><li>SQL Audit Report on a real database</li><li>Full Python EDA on a messy dataset</li><li>Interactive Power BI Executive Dashboard</li></ul></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ═══════════════ PHASE 2 ═══════════════ -->
+<section class="phase" id="phase2">
+<div class="container">
+    <div class="ph-head anim"><div class="ph-num" style="background:var(--grad-2)">2</div><h2>Mathematics &amp; Engineering Foundations</h2><p class="ph-sub">The mathematical backbone of AI and the engineering skills for production code</p></div>
+    <div class="cards-grid">
+
+        <div class="card anim" style="--ca:var(--cyan)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(6,182,212,.12);color:var(--cyan)"><i class="fas fa-vector-square"></i></span><h3>Linear Algebra &amp; Core Programming</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Git &amp; Version Control</div><ul class="tl"><li>init, add, commit, push, pull</li><li>Branching, Merging, Rebasing</li><li>Conflict Resolution</li><li>GitHub: Pull Requests, Issues, Collaboration</li></ul></div>
+                <div class="tg"><div class="tt">Python OOP</div><ul class="tl"><li>Classes &amp; Objects, __init__, self</li><li>Inheritance &amp; Polymorphism</li><li>Encapsulation &amp; Abstraction</li><li>Magic Methods (__str__, __repr__, __len__)</li><li>SOLID Principles</li><li>Design Patterns (Factory, Singleton)</li><li>Decorators &amp; Context Managers</li></ul></div>
+                <div class="tg"><div class="tt">Linear Algebra</div><ul class="tl"><li>Scalars, Vectors, Matrices, Tensors</li><li>Dot Product, Cross Product</li><li>Matrix Multiplication, Transpose, Inverse</li><li>Determinants &amp; Rank</li><li>Linear Independence &amp; Span</li><li>Eigenvalues &amp; Eigenvectors</li><li>Singular Value Decomposition (SVD)</li><li>Applications: PCA, Image Compression</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--pink)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(236,72,153,.12);color:var(--pink)"><i class="fas fa-infinity"></i></span><h3>Calculus &amp; Data Structures</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Calculus</div><ul class="tl"><li>Limits &amp; Continuity</li><li>Derivatives &amp; Differentiation Rules</li><li>Partial Derivatives &amp; Gradients</li><li>The Chain Rule &amp; Computational Graphs</li><li>Gradient Descent (Batch, SGD, Mini-Batch)</li><li>Convexity, Local vs. Global Minima</li><li>Integrals &amp; Area Under Curves</li></ul></div>
+                <div class="tg"><div class="tt">Data Structures</div><ul class="tl"><li>Big O Notation (Time &amp; Space Complexity)</li><li>Arrays &amp; Dynamic Arrays</li><li>Linked Lists (Singly, Doubly)</li><li>Stacks &amp; Queues</li><li>Hash Maps / Hash Tables</li><li>Trees: Binary Trees, BST, AVL</li><li>Heaps &amp; Priority Queues</li><li>Tries (Prefix Trees)</li></ul></div>
+                <div class="tg"><div class="tt">Algorithms</div><ul class="tl"><li>Binary Search</li><li>Sorting: Merge Sort, Quick Sort, Heap Sort</li><li>Recursion &amp; Backtracking</li><li>Two Pointers &amp; Sliding Window</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--orange)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(245,158,11,.12);color:var(--orange)"><i class="fas fa-dice"></i></span><h3>Probability, Graphs &amp; System Design</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Probability Theory</div><ul class="tl"><li>Conditional Probability</li><li>Bayes' Theorem &amp; Bayesian Thinking</li><li>Random Variables (Discrete &amp; Continuous)</li><li>Expectation, Variance</li><li>Joint, Marginal &amp; Conditional Distributions</li><li>MLE &amp; MAP</li><li>Information Theory (Entropy, KL Divergence)</li></ul></div>
+                <div class="tg"><div class="tt">Graph Algorithms</div><ul class="tl"><li>Graph Representations (Adjacency List / Matrix)</li><li>BFS &amp; DFS</li><li>Dijkstra's Shortest Path</li><li>Topological Sort</li><li>Dynamic Programming Patterns</li></ul></div>
+                <div class="tg"><div class="tt">System Design Basics</div><ul class="tl"><li>REST APIs &amp; HTTP Methods</li><li>Load Balancing &amp; Caching</li><li>Database Design (SQL vs. NoSQL)</li><li>Microservices vs. Monolith</li></ul></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ═══════════════ PHASE 3 ═══════════════ -->
+<section class="phase" id="phase3">
+<div class="container">
+    <div class="ph-head anim"><div class="ph-num" style="background:var(--grad-3)">3</div><h2>Machine Learning Mastery</h2><p class="ph-sub">Train predictive models — understand both the math and the practical intuition</p></div>
+    <div class="cards-grid">
+
+        <div class="card anim" style="--ca:var(--blue)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(59,130,246,.12);color:var(--blue)"><i class="fas fa-chart-line"></i></span><h3>Linear Models &amp; Optimization</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Linear Regression</div><ul class="tl"><li>Simple &amp; Multiple Linear Regression</li><li>Cost Function (MSE, RMSE, MAE)</li><li>Normal Equation (closed-form)</li><li>Gradient Descent from Scratch (NumPy)</li><li>Polynomial Regression</li><li>Regularization: Ridge (L2), Lasso (L1), ElasticNet</li><li>Bias-Variance Tradeoff</li><li>Cross-Validation (K-Fold, Stratified)</li></ul></div>
+                <div class="tg"><div class="tt">Logistic Regression &amp; Classification</div><ul class="tl"><li>Sigmoid &amp; Decision Boundary</li><li>Binary Cross-Entropy Loss</li><li>Multi-class: OvR, Softmax</li><li>Confusion Matrix (TP, TN, FP, FN)</li><li>Precision, Recall, F1, ROC/AUC</li></ul></div>
+                <div class="tg"><div class="tt">Support Vector Machines</div><ul class="tl"><li>Maximum Margin Classifier</li><li>Soft Margin &amp; C parameter</li><li>Kernel Trick (RBF, Polynomial)</li></ul></div>
+                <div class="tg"><div class="tt">Scikit-Learn Pipelines</div><ul class="tl"><li>Pipeline &amp; ColumnTransformer</li><li>Custom Transformers (TransformerMixin)</li><li>Encoding: OneHot, Label, Ordinal</li><li>Scaling: Standard, MinMax, Robust</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--green)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-tree"></i></span><h3>Ensembles &amp; Unsupervised Learning</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Tree-Based Models</div><ul class="tl"><li>Decision Trees (Entropy, Gini, Info Gain)</li><li>Random Forests (Bagging)</li><li>AdaBoost, Gradient Boosting</li><li>XGBoost, LightGBM, CatBoost</li><li>Stacking &amp; Blending Ensembles</li></ul></div>
+                <div class="tg"><div class="tt">Hyperparameter Tuning</div><ul class="tl"><li>GridSearchCV, RandomizedSearchCV</li><li>Optuna (Bayesian Optimization)</li></ul></div>
+                <div class="tg"><div class="tt">Dimensionality Reduction</div><ul class="tl"><li>PCA — math &amp; code</li><li>t-SNE, UMAP for Visualization</li><li>Feature Selection methods</li></ul></div>
+                <div class="tg"><div class="tt">Clustering</div><ul class="tl"><li>K-Means, K-Means++</li><li>Elbow Method, Silhouette Score</li><li>DBSCAN, HDBSCAN</li><li>Gaussian Mixture Models (GMM)</li><li>Hierarchical Clustering</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--purple)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(139,92,246,.12);color:var(--purple)"><i class="fas fa-gears"></i></span><h3>Advanced ML &amp; Production</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Anomaly Detection</div><ul class="tl"><li>Isolation Forest, One-Class SVM</li><li>Local Outlier Factor (LOF)</li></ul></div>
+                <div class="tg"><div class="tt">Recommender Systems</div><ul class="tl"><li>Collaborative Filtering (User &amp; Item)</li><li>Matrix Factorization (SVD, NMF)</li><li>Content-Based &amp; Hybrid</li></ul></div>
+                <div class="tg"><div class="tt">Intro to Neural Networks</div><ul class="tl"><li>Perceptron &amp; MLPs</li><li>Activation Functions (ReLU, Sigmoid, Tanh, Softmax)</li><li>Forward Pass &amp; Backpropagation</li></ul></div>
+                <div class="tg"><div class="tt">Production Practices</div><ul class="tl"><li>OOP ML Pipelines</li><li>Imbalanced Data (SMOTE, Class Weights)</li><li>Feature Importance</li><li>Explainability: SHAP &amp; LIME</li><li>Model Serialization (joblib, pickle)</li></ul></div>
+                <div class="cap"><div class="cap-title"><i class="fas fa-star"></i> Grand ML Capstone</div><ul><li>End-to-End OOP ML project with mathematical whitepaper</li></ul></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ═══════════════ PHASE 4 ═══════════════ -->
+<section class="phase" id="phase4">
+<div class="container">
+    <div class="ph-head anim"><div class="ph-num" style="background:var(--grad-4)">4</div><h2>Deep Learning &amp; Neural Architectures</h2><p class="ph-sub">Master modern AI — CNNs, Transformers, LLMs, and Generative AI</p></div>
+    <div class="cards-grid">
+
+        <div class="card anim" style="--ca:var(--orange)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(245,158,11,.12);color:var(--orange)"><i class="fas fa-fire"></i></span><h3>DNNs &amp; Optimization</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Frameworks</div><ul class="tl"><li>TensorFlow &amp; Keras (Sequential, Functional, Subclassing)</li><li>PyTorch (Tensors, Autograd, nn.Module)</li></ul></div>
+                <div class="tg"><div class="tt">Training Challenges</div><ul class="tl"><li>Vanishing &amp; Exploding Gradients</li><li>Weight Initialization (Xavier, He)</li><li>Batch Normalization, Layer Normalization</li><li>Gradient Clipping</li></ul></div>
+                <div class="tg"><div class="tt">Optimizers</div><ul class="tl"><li>SGD + Momentum, RMSProp</li><li>Adam, AdamW</li><li>Learning Rate Scheduling (Cosine Annealing, Warm Restarts)</li></ul></div>
+                <div class="tg"><div class="tt">Regularization</div><ul class="tl"><li>Dropout &amp; Spatial Dropout</li><li>Early Stopping, L2 Weight Decay</li><li>Data Augmentation as regularization</li></ul></div>
+                <div class="tg"><div class="tt">Custom Training</div><ul class="tl"><li>tf.GradientTape / PyTorch training loop</li><li>Custom Callbacks &amp; Metrics</li><li>TensorBoard visualization</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--pink)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(236,72,153,.12);color:var(--pink)"><i class="fas fa-eye"></i></span><h3>Computer Vision — CNNs</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">CNN Fundamentals</div><ul class="tl"><li>Convolution (Filters, Stride, Padding)</li><li>Pooling (Max, Average, Global Average)</li><li>Feature Maps &amp; Receptive Field</li></ul></div>
+                <div class="tg"><div class="tt">Architectures</div><ul class="tl"><li>LeNet, AlexNet, VGG</li><li>ResNet (Skip / Residual Connections)</li><li>Inception, EfficientNet, MobileNet</li></ul></div>
+                <div class="tg"><div class="tt">Transfer Learning</div><ul class="tl"><li>Pre-trained Models (ImageNet)</li><li>Feature Extraction vs. Fine-Tuning</li><li>Freezing / Unfreezing Layers</li></ul></div>
+                <div class="tg"><div class="tt">Augmentation &amp; Pipelines</div><ul class="tl"><li>Geometric, Color, Cutout, Mixup</li><li>tf.data API / PyTorch DataLoader</li><li>TFRecords &amp; Prefetching</li></ul></div>
+                <div class="tg"><div class="tt">Advanced CV</div><ul class="tl"><li>Object Detection (YOLO basics)</li><li>Semantic Segmentation (U-Net basics)</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--red)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(239,68,68,.12);color:var(--red)"><i class="fas fa-robot"></i></span><h3>NLP, Transformers, LLMs &amp; GenAI</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Sequence Models</div><ul class="tl"><li>RNNs, LSTMs, GRUs</li><li>Bidirectional &amp; Stacked RNNs</li><li>Seq2Seq Encoder-Decoder</li></ul></div>
+                <div class="tg"><div class="tt">Time-Series</div><ul class="tl"><li>ARIMA, SARIMA, Prophet</li><li>DeepAR, N-BEATS</li></ul></div>
+                <div class="tg"><div class="tt">NLP Foundations</div><ul class="tl"><li>Tokenization, Stemming, Lemmatization</li><li>Bag of Words, TF-IDF</li><li>Word2Vec, GloVe, FastText</li><li>Attention (Bahdanau, Luong)</li></ul></div>
+                <div class="tg"><div class="tt">The Transformer Revolution</div><ul class="tl"><li>Self-Attention &amp; Multi-Head Attention</li><li>Positional Encoding</li><li>"Attention Is All You Need" paper</li><li>BERT, GPT, T5</li><li>HuggingFace Transformers Library</li><li>Tokenizers (BPE, WordPiece)</li></ul></div>
+                <div class="tg"><div class="tt">Large Language Models</div><ul class="tl"><li>Prompt Engineering (Zero/Few-shot, CoT)</li><li>Fine-Tuning: LoRA, QLoRA, PEFT</li><li>RAG (Retrieval-Augmented Generation)</li><li>Vector DBs (ChromaDB, Pinecone, Weaviate)</li><li>LangChain / LlamaIndex</li><li>AI Agents &amp; Agentic Workflows</li></ul></div>
+                <div class="tg"><div class="tt">Generative AI</div><ul class="tl"><li>Autoencoders &amp; VAEs</li><li>GANs (DCGAN, Conditional, StyleGAN)</li><li>Diffusion Models (Stable Diffusion)</li></ul></div>
+                <div class="tg"><div class="tt">Multimodal AI</div><ul class="tl"><li>Vision-Language Models (CLIP, LLaVA)</li></ul></div>
+                <div class="cap"><div class="cap-title"><i class="fas fa-star"></i> Deep Learning Capstone</div><ul><li>Deploy a custom DNN on unstructured data (images, text, or time-series)</li></ul></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ═══════════════ PHASE 5 ═══════════════ -->
+<section class="phase" id="phase5">
+<div class="container">
+    <div class="ph-head anim"><div class="ph-num" style="background:var(--grad-5)">5</div><h2>MLOps &amp; Cloud Architecture</h2><p class="ph-sub">Take models out of notebooks and deploy them to the cloud at scale</p></div>
+    <div class="cards-grid">
+
+        <div class="card anim" style="--ca:var(--cyan)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(6,182,212,.12);color:var(--cyan)"><i class="fab fa-docker"></i></span><h3>Containers &amp; APIs</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Docker</div><ul class="tl"><li>Images, Containers, Volumes, Networks</li><li>Dockerfile &amp; Multi-Stage Builds</li><li>Docker Compose</li><li>Environment Management (Poetry, venv)</li></ul></div>
+                <div class="tg"><div class="tt">FastAPI — Model Serving</div><ul class="tl"><li>REST APIs for ML models</li><li>Pydantic validation</li><li>Async endpoints &amp; batch inference</li><li>Swagger / OpenAPI docs</li></ul></div>
+                <div class="tg"><div class="tt">CI/CD</div><ul class="tl"><li>GitHub Actions workflows</li><li>Automated Testing (pytest)</li><li>Linting (ruff) &amp; Formatting (black)</li><li>Pre-commit Hooks</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--blue)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(59,130,246,.12);color:var(--blue)"><i class="fab fa-aws"></i></span><h3>Cloud &amp; Big Data</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">AWS Fundamentals</div><ul class="tl"><li>IAM (Users, Roles, Policies)</li><li>S3 (Object Storage, Buckets)</li><li>EC2 (Virtual Machines)</li><li>Lambda (Serverless)</li><li>SageMaker (Training &amp; Endpoints)</li><li>ECR (Container Registry)</li><li>CloudWatch (Monitoring)</li></ul></div>
+                <div class="tg"><div class="tt">Distributed Computing</div><ul class="tl"><li>Apache Spark (PySpark DataFrames)</li><li>Data Warehousing (Redshift, BigQuery)</li><li>ETL vs. ELT patterns</li></ul></div>
+                <div class="tg"><div class="tt">Orchestration</div><ul class="tl"><li>Apache Airflow (DAGs, Operators)</li><li>Prefect (modern alternative)</li></ul></div>
+            </div>
+        </div>
+
+        <div class="card anim" style="--ca:var(--green)">
+            <div class="card-top"><span class="card-ico" style="background:rgba(16,185,129,.12);color:var(--green)"><i class="fas fa-rocket"></i></span><h3>Production ML Lifecycle</h3><button class="card-tog"><i class="fas fa-chevron-down"></i></button></div>
+            <div class="card-body">
+                <div class="tg"><div class="tt">Experiment Tracking</div><ul class="tl"><li>MLflow (Tracking, Registry, Serving)</li><li>Weights &amp; Biases (W&amp;B)</li><li>DVC (Data Version Control)</li></ul></div>
+                <div class="tg"><div class="tt">Model Monitoring</div><ul class="tl"><li>Data Drift (Evidently AI)</li><li>Concept Drift</li><li>Performance Monitoring &amp; alerting</li></ul></div>
+                <div class="tg"><div class="tt">Deployment Strategies</div><ul class="tl"><li>Shadow Deployment</li><li>Canary Releases</li><li>Blue/Green Deployment</li><li>A/B Testing in Production</li></ul></div>
+                <div class="tg"><div class="tt">Responsible AI</div><ul class="tl"><li>Fairness &amp; Bias Auditing</li><li>Model Cards &amp; Documentation</li><li>AI Governance &amp; Compliance</li></ul></div>
+                <div class="cap"><div class="cap-title"><i class="fas fa-star"></i> Final Grand Capstone</div><ul><li>Continuous Training Pipeline: auto-fetch → retrain → evaluate → auto-deploy (GitHub Actions + AWS)</li></ul></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ═══════════════ RESOURCES ═══════════════ -->
+<section class="resources-section" id="resources">
+<div class="container">
+    <h2 class="sec-title anim"><i class="fas fa-book-open"></i> Books &amp; Resources</h2>
+    <p class="sec-sub anim">Curated by phase — the exact books, courses, and platforms used by top engineers worldwide.</p>
+
+    <div class="search-bar anim"><i class="fas fa-search"></i><input type="text" id="searchInput" placeholder='Search any topic… (press "/" to focus)'></div>
+    <div class="search-count" id="searchCount"></div>
+
+    <div class="res-grid">
+
+        <!-- Books: Foundations -->
+        <div class="res-card anim" style="--ra:var(--emerald)">
+            <div class="res-head"><div class="res-ico" style="background:rgba(52,211,153,.12);color:var(--emerald)"><i class="fas fa-seedling"></i></div><div><h3>Phase 0–1: Foundation Books</h3></div></div>
+            <div class="res-list">
+                <div class="res-item"><div class="ri-ico" style="background:rgba(59,130,246,.1);color:var(--blue)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Automate the Boring Stuff with Python <span class="badge free">FREE</span></div><div class="ri-a">Al Sweigart</div><div class="ri-d">The perfect first Python book. Practical and freely available online.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(139,92,246,.1);color:var(--purple)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Python for Data Analysis <span class="badge ess">ESSENTIAL</span></div><div class="ri-a">Wes McKinney (creator of Pandas)</div><div class="ri-d">The bible of data manipulation — NumPy, Pandas, and data cleaning.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Naked Statistics</div><div class="ri-a">Charles Wheelan</div><div class="ri-d">Statistics made intuitive and fun. No heavy math required.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(245,158,11,.1);color:var(--orange)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Storytelling with Data</div><div class="ri-a">Cole Nussbaumer Knaflic</div><div class="ri-d">Master data visualization and compelling presentations.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(6,182,212,.1);color:var(--cyan)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Data Science for Business</div><div class="ri-a">Foster Provost &amp; Tom Fawcett</div><div class="ri-d">Bridges business thinking and data-driven decision-making.</div></div></div>
+            </div>
+        </div>
+
+        <!-- Books: Math & ML -->
+        <div class="res-card anim" style="--ra:var(--purple)">
+            <div class="res-head"><div class="res-ico" style="background:rgba(139,92,246,.12);color:var(--purple)"><i class="fas fa-square-root-variable"></i></div><div><h3>Phase 2–3: Math &amp; ML Books</h3></div></div>
+            <div class="res-list">
+                <div class="res-item"><div class="ri-ico" style="background:rgba(59,130,246,.1);color:var(--blue)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Mathematics for Machine Learning <span class="badge free">FREE PDF</span></div><div class="ri-a">Deisenroth, Faisal &amp; Ong</div><div class="ri-d">Linear algebra, calculus, probability — written specifically for ML.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(245,158,11,.1);color:var(--orange)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Intro to Statistical Learning (ISLR) <span class="badge free">FREE PDF</span></div><div class="ri-a">James, Witten, Hastie &amp; Tibshirani</div><div class="ri-d">Gold standard ML theory intro. Python edition available.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(239,68,68,.1);color:var(--red)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Hands-On ML with Scikit-Learn, Keras &amp; TF <span class="badge ess">ESSENTIAL</span></div><div class="ri-a">Aurélien Géron</div><div class="ri-d">The most practical ML book. Classical ML + Deep Learning end-to-end.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(139,92,246,.1);color:var(--purple)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Pattern Recognition &amp; Machine Learning <span class="badge adv">ADVANCED</span></div><div class="ri-a">Christopher Bishop</div><div class="ri-d">Heavy mathematical ML theory. The gold reference for serious learners.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">The Hundred-Page Machine Learning Book</div><div class="ri-a">Andriy Burkov</div><div class="ri-d">Concise but rigorous. Perfect for revision and interview prep.</div></div></div>
+            </div>
+        </div>
+
+        <!-- Books: Deep Learning -->
+        <div class="res-card anim" style="--ra:var(--orange)">
+            <div class="res-head"><div class="res-ico" style="background:rgba(245,158,11,.12);color:var(--orange)"><i class="fas fa-network-wired"></i></div><div><h3>Phase 4–5: Deep Learning &amp; MLOps</h3></div></div>
+            <div class="res-list">
+                <div class="res-item"><div class="ri-ico" style="background:rgba(239,68,68,.1);color:var(--red)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Deep Learning <span class="badge free">FREE ONLINE</span></div><div class="ri-a">Goodfellow, Bengio &amp; Courville</div><div class="ri-d">The comprehensive DL textbook. Heavy theory — the industry standard.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(59,130,246,.1);color:var(--blue)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Deep Learning with Python <span class="badge ess">ESSENTIAL</span></div><div class="ri-a">François Chollet (creator of Keras)</div><div class="ri-d">Practical DL with Keras. Intuitive, beautifully written.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(139,92,246,.1);color:var(--purple)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">NLP with Transformers <span class="badge ess">ESSENTIAL</span></div><div class="ri-a">Tunstall, von Werra &amp; Wolf (HuggingFace)</div><div class="ri-d">THE book on Transformers. Written by the HuggingFace team.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Designing ML Systems</div><div class="ri-a">Chip Huyen</div><div class="ri-d">Production ML — deployment, monitoring, and system design.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(245,158,11,.1);color:var(--orange)"><i class="fas fa-book"></i></div><div class="ri-info"><div class="ri-t">Machine Learning Engineering</div><div class="ri-a">Andriy Burkov</div><div class="ri-d">MLOps best practices from prototype to production.</div></div></div>
+            </div>
+        </div>
+
+        <!-- Online Courses -->
+        <div class="res-card anim" style="--ra:var(--blue)">
+            <div class="res-head"><div class="res-ico" style="background:rgba(59,130,246,.12);color:var(--blue)"><i class="fas fa-graduation-cap"></i></div><div><h3>Online Courses</h3></div></div>
+            <div class="res-list">
+                <div class="res-item"><div class="ri-ico" style="background:rgba(239,68,68,.1);color:var(--red)"><i class="fas fa-play-circle"></i></div><div class="ri-info"><div class="ri-t">Machine Learning Specialization <span class="badge ess">ESSENTIAL</span></div><div class="ri-a">Andrew Ng — DeepLearning.AI / Stanford (Coursera)</div><div class="ri-d">The world's most popular ML course. Rebuilt in 2022 with Python.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(59,130,246,.1);color:var(--blue)"><i class="fas fa-play-circle"></i></div><div class="ri-info"><div class="ri-t">Deep Learning Specialization <span class="badge ess">ESSENTIAL</span></div><div class="ri-a">Andrew Ng — DeepLearning.AI (Coursera)</div><div class="ri-d">5-course specialization. CNNs, RNNs, Transformers, and more.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fas fa-play-circle"></i></div><div class="ri-info"><div class="ri-t">Practical Deep Learning for Coders <span class="badge free">FREE</span></div><div class="ri-a">Jeremy Howard — fast.ai</div><div class="ri-d">Top-down practical approach. Build real models from day one.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(245,158,11,.1);color:var(--orange)"><i class="fas fa-play-circle"></i></div><div class="ri-info"><div class="ri-t">MIT 6.S191 — Intro to Deep Learning <span class="badge free">FREE</span></div><div class="ri-a">MIT</div><div class="ri-d">Research-level, concise. Covers latest architectures yearly.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(139,92,246,.1);color:var(--purple)"><i class="fas fa-play-circle"></i></div><div class="ri-info"><div class="ri-t">CS50 AI with Python <span class="badge free">FREE</span></div><div class="ri-a">Harvard (edX)</div><div class="ri-d">Search, optimization, neural nets, NLP — excellent fundamentals.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(6,182,212,.1);color:var(--cyan)"><i class="fas fa-play-circle"></i></div><div class="ri-info"><div class="ri-t">Google ML Crash Course <span class="badge free">FREE</span></div><div class="ri-a">Google Developers</div><div class="ri-d">ML fundamentals with TensorFlow and interactive Colab notebooks.</div></div></div>
+            </div>
+        </div>
+
+        <!-- Platforms -->
+        <div class="res-card anim" style="--ra:var(--cyan)">
+            <div class="res-head"><div class="res-ico" style="background:rgba(6,182,212,.12);color:var(--cyan)"><i class="fas fa-laptop-code"></i></div><div><h3>Practice Platforms</h3></div></div>
+            <div class="res-list">
+                <div class="res-item"><div class="ri-ico" style="background:rgba(59,130,246,.1);color:var(--blue)"><i class="fas fa-trophy"></i></div><div class="ri-info"><div class="ri-t">Kaggle <span class="badge free">FREE</span></div><div class="ri-a">Competitions, Datasets, Micro-Courses, Notebooks</div><div class="ri-d">The #1 data science competition platform. Free GPU/TPU access.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fas fa-code"></i></div><div class="ri-info"><div class="ri-t">LeetCode</div><div class="ri-a">DSA &amp; Algorithm Practice</div><div class="ri-d">Essential for coding interviews. Focus on Blind 75 + NeetCode 150.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(245,158,11,.1);color:var(--orange)"><i class="fas fa-database"></i></div><div class="ri-info"><div class="ri-t">StrataScratch / DataLemur</div><div class="ri-a">SQL Practice Platforms</div><div class="ri-d">Real SQL interview questions from FAANG companies.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(139,92,246,.1);color:var(--purple)"><i class="fas fa-face-smile"></i></div><div class="ri-info"><div class="ri-t">HuggingFace <span class="badge free">FREE</span></div><div class="ri-a">Models, Datasets, Spaces</div><div class="ri-d">The GitHub of AI. Pre-trained models, datasets, and deployment.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(236,72,153,.1);color:var(--pink)"><i class="fas fa-newspaper"></i></div><div class="ri-info"><div class="ri-t">Papers With Code <span class="badge free">FREE</span></div><div class="ri-a">Research Papers + Implementations</div><div class="ri-d">Every ML paper with its code. Stay at the cutting edge.</div></div></div>
+            </div>
+        </div>
+
+        <!-- YouTube -->
+        <div class="res-card anim" style="--ra:var(--red)">
+            <div class="res-head"><div class="res-ico" style="background:rgba(239,68,68,.12);color:var(--red)"><i class="fab fa-youtube"></i></div><div><h3>YouTube Channels</h3></div></div>
+            <div class="res-list">
+                <div class="res-item"><div class="ri-ico" style="background:rgba(239,68,68,.1);color:var(--red)"><i class="fab fa-youtube"></i></div><div class="ri-info"><div class="ri-t">3Blue1Brown</div><div class="ri-a">Grant Sanderson</div><div class="ri-d">The best math visualizations on the internet. Linear Algebra &amp; Calculus series are legendary.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(59,130,246,.1);color:var(--blue)"><i class="fabfa-youtube"></i></div><div class="ri-info"><div class="ri-t">StatQuest</div><div class="ri-a">Josh Starmer</div><div class="ri-d">Statistics &amp; ML explained with crystal clarity. BAM!</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(16,185,129,.1);color:var(--green)"><i class="fab fa-youtube"></i></div><div class="ri-info"><div class="ri-t">Sentdex</div><div class="ri-a">Harrison Kinsley</div><div class="ri-d">Python, ML, Deep Learning — practical project-based tutorials.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(139,92,246,.1);color:var(--purple)"><i class="fab fa-youtube"></i></div><div class="ri-info"><div class="ri-t">Andrej Karpathy</div><div class="ri-a">Former Tesla AI Director</div><div class="ri-d">Neural Networks from scratch. "Let's build GPT" is a masterpiece.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(245,158,11,.1);color:var(--orange)"><i class="fab fa-youtube"></i></div><div class="ri-info"><div class="ri-t">Yannic Kilcher</div><div class="ri-a">ML Paper Reviews</div><div class="ri-d">Deep dives into cutting-edge research papers explained clearly.</div></div></div>
+                <div class="res-item"><div class="ri-ico" style="background:rgba(6,182,212,.1);color:var(--cyan)"><i class="fab fa-youtube"></i></div><div class="ri-info"><div class="ri-t">Two Minute Papers</div><div class="ri-a">Károly Zsolnai-Fehér</div><div class="ri-d">Quick exciting overviews of latest AI research breakthroughs.</div></div></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- ═══════════════ BONUS ═══════════════ -->
+<section class="bonus-section" id="bonus">
+<div class="container">
+    <div class="bonus-wrap anim">
+        <h2><i class="fas fa-wand-magic-sparkles"></i> Cutting-Edge Topics (2025–2026)</h2>
+        <div class="bonus-grid">
+            <div class="bonus-item"><i class="fas fa-robot"></i> AI Agents &amp; Agentic Workflows</div>
+            <div class="bonus-item"><i class="fas fa-diagram-project"></i> Graph Neural Networks (GNNs)</div>
+            <div class="bonus-item"><i class="fas fa-gamepad"></i> Reinforcement Learning (PPO, DQN)</div>
+            <div class="bonus-item"><i class="fas fa-shield-halved"></i> Federated &amp; Privacy-Preserving ML</div>
+            <div class="bonus-item"><i class="fas fa-wand-magic"></i> AutoML (Auto-Sklearn, FLAML, H2O)</div>
+            <div class="bonus-item"><i class="fas fa-magnifying-glass-chart"></i> Explainable AI (XAI)</div>
+            <div class="bonus-item"><i class="fas fa-microchip"></i> Edge AI &amp; TinyML</div>
+            <div class="bonus-item"><i class="fas fa-bullseye"></i> Zero-Shot / Few-Shot Learning</div>
+            <div class="bonus-item"><i class="fas fa-database"></i> Vector Databases (Pinecone, Weaviate)</div>
+            <div class="bonus-item"><i class="fas fa-image"></i> Text-to-Image &amp; Text-to-Video</div>
+            <div class="bonus-item"><i class="fas fa-language"></i> Multimodal Foundation Models</div>
+            <div class="bonus-item"><i class="fas fa-scale-balanced"></i> AI Ethics, Safety &amp; Alignment</div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+    <div class="container">
+        <p class="footer-quote">"If you execute this roadmap, you will bypass the Junior tier entirely. You will have the portfolio, mathematical depth, and engineering skills of a Mid-Level Machine Learning / MLOps Engineer."</p>
+        <p class="footer-brand">Made with <span class="heart">❤</span> by Farouz — Open Source &amp; Free Forever</p>
+        <p style="margin-top:16px;font-size:.75rem;color:var(--text-muted)">Star ⭐ the repo if this helped you!</p>
+    </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
